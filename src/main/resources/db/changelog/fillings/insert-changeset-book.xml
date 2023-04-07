@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="006" author="frolov">
+        <preConditions>
+            <sqlCheck expectedResult="6">select count(*) from author</sqlCheck>
+        </preConditions>
+
+        <insert tableName="book">
+            <column name="title" value="Хоббит, или Туда и обратно"/>
+            <column name="author_id" value="1"/>
+            <column name="year" value="1937"/>
+        </insert>
+        <insert tableName="book">
+            <column name="title" value="Властелин колец"/>
+            <column name="author_id" value="1"/>
+            <column name="year" value="1954"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="title" value="Автостопом по Галактике"/>
+            <column name="author_id" value="2"/>
+            <column name="year" value="1979"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="title" value="1984"/>
+            <column name="author_id" value="3"/>
+            <column name="year" value="1949"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="title" value="Преступление и наказание"/>
+            <column name="author_id" value="4"/>
+            <column name="year" value="1866"/>
+        </insert>
+        <insert tableName="book">
+            <column name="title" value="Идиот"/>
+            <column name="author_id" value="4"/>
+            <column name="year" value="1868"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="title" value="Война и мир"/>
+            <column name="author_id" value="5"/>
+            <column name="year" value="1865"/>
+        </insert>
+        <insert tableName="book">
+            <column name="title" value="Анна Каренина"/>
+            <column name="author_id" value="5"/>
+            <column name="year" value="1875"/>
+        </insert>
+
+        <insert tableName="book">
+            <column name="title" value="Роковые яйца"/>
+            <column name="author_id" value="6"/>
+            <column name="year" value="1925"/>
+        </insert>
+        <insert tableName="book">
+            <column name="title" value="Мастер и Маргарита"/>
+            <column name="author_id" value="6"/>
+            <column name="year" value="1966"/>
+        </insert>
+        <insert tableName="book">
+            <column name="title" value="Собачье сердце"/>
+            <column name="author_id" value="6"/>
+            <column name="year" value="1987"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

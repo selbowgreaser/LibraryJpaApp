@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <include file="classpath:db/changelog/tables/create-changeset-author-table.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/tables/create-changeset-person-table.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/tables/create-changeset-book-table.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/tables/create-changeset-borrowing-table.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/fillings/insert-changeset-author.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/fillings/insert-changeset-book.xml" relativeToChangelogFile="false"/>
+
+    <include file="classpath:db/changelog/fillings/insert-changeset-person.xml" relativeToChangelogFile="false"/>
+
+
+
+
+</databaseChangeLog>

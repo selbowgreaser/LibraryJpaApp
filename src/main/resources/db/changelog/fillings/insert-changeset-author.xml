@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="005" author="frolov">
+        <insert tableName="author">
+            <column name="surname" value="Толкин"/>
+            <column name="name" value="Джон"/>
+            <column name="birthday" value="1892-01-03"/>
+        </insert>
+        <insert tableName="author">
+            <column name="surname" value="Адамс"/>
+            <column name="name" value="Дуглас"/>
+            <column name="birthday" value="1952-03-11"/>
+        </insert>
+        <insert tableName="author">
+            <column name="surname" value="Оруэлл"/>
+            <column name="name" value="Джордж"/>
+            <column name="birthday" value="1903-06-25"/>
+        </insert>
+        <insert tableName="author">
+            <column name="surname" value="Достоевский"/>
+            <column name="name" value="Фёдор"/>
+            <column name="patronymic" value="Михайлович"/>
+            <column name="birthday" value="1821-11-11"/>
+        </insert>
+        <insert tableName="author">
+            <column name="surname" value="Толстой"/>
+            <column name="name" value="Лев"/>
+            <column name="patronymic" value="Николаевич"/>
+            <column name="birthday" value="1828-09-09"/>
+        </insert>
+        <insert tableName="author">
+            <column name="surname" value="Булгаков"/>
+            <column name="name" value="Михаил"/>
+            <column name="patronymic" value="Афанасьевич"/>
+            <column name="birthday" value="1891-05-15"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

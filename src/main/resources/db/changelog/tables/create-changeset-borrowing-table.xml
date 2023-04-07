@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="004" author="frolov">
+        <createTable tableName="borrowing">
+            <column name="id" type="integer" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="book_id" type="integer"/>
+            <column name="person_id" type="integer"/>
+            <column name="start_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="end_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="borrowing" baseColumnNames="book_id"
+                                 constraintName="borrowing_book_id_fkey" referencedTableName="book"
+                                 referencedColumnNames="id" onDelete="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="borrowing" baseColumnNames="person_id"
+                                 constraintName="borrowing_person_id_fkey" referencedTableName="person"
+                                 referencedColumnNames="id" onDelete="CASCADE"/>
+    </changeSet>
+</databaseChangeLog>

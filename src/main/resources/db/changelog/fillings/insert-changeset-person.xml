@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="007" author="frolov">
+        <insert tableName="person">
+            <column name="surname" value="Лобанов"/>
+            <column name="name" value="Альберт"/>
+            <column name="patronymic" value="Валерьевич"/>
+            <column name="birthday" value="2004-07-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Коновалов"/>
+            <column name="name" value="Арсений"/>
+            <column name="patronymic" value="Станиславович"/>
+            <column name="birthday" value="1969-01-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Савельева"/>
+            <column name="name" value="Вера"/>
+            <column name="patronymic" value="Павловна"/>
+            <column name="birthday" value="1972-08-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Плотников"/>
+            <column name="name" value="Савелий"/>
+            <column name="patronymic" value="Андреевич"/>
+            <column name="birthday" value="1978-04-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Игнатов"/>
+            <column name="name" value="Егор"/>
+            <column name="patronymic" value="Тимофеевич"/>
+            <column name="birthday" value="1968-08-05"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Серова"/>
+            <column name="name" value="Милена"/>
+            <column name="patronymic" value="Иосифовна"/>
+            <column name="birthday" value="1988-12-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Коротков"/>
+            <column name="name" value="Клим"/>
+            <column name="patronymic" value="Иванович"/>
+            <column name="birthday" value="1984-11-12"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Кириллов"/>
+            <column name="name" value="Марат"/>
+            <column name="patronymic" value="Геннадиевич"/>
+            <column name="birthday" value="1989-02-16"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Галкина"/>
+            <column name="name" value="Мария"/>
+            <column name="patronymic" value="Андреевна"/>
+            <column name="birthday" value="1975-07-16"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Зайцев"/>
+            <column name="name" value="Артур"/>
+            <column name="patronymic" value="Сергеевич"/>
+            <column name="birthday" value="1981-05-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Пономарев"/>
+            <column name="name" value="Клим"/>
+            <column name="patronymic" value="Александрович"/>
+            <column name="birthday" value="1975-07-16"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Панова"/>
+            <column name="name" value="Каролина"/>
+            <column name="patronymic" value="Андреевна"/>
+            <column name="birthday" value="1977-07-10"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Герасимов"/>
+            <column name="name" value="Гордей"/>
+            <column name="patronymic" value="Вольфович"/>
+            <column name="birthday" value="1979-05-06"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Климов"/>
+            <column name="name" value="Виктор"/>
+            <column name="patronymic" value="Денисович"/>
+            <column name="birthday" value="1998-08-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Евдокимова"/>
+            <column name="name" value="Ольга"/>
+            <column name="patronymic" value="Богдановна"/>
+            <column name="birthday" value="2009-05-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Маслов"/>
+            <column name="name" value="Тимофей"/>
+            <column name="patronymic" value="Васильевич"/>
+            <column name="birthday" value="1960-07-23"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Родионов"/>
+            <column name="name" value="Святослав"/>
+            <column name="patronymic" value="Павлович"/>
+            <column name="birthday" value="1985-03-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Киселева"/>
+            <column name="name" value="Агата"/>
+            <column name="patronymic" value="Борисовна"/>
+            <column name="birthday" value="1986-02-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Ефремов"/>
+            <column name="name" value="Валентин"/>
+            <column name="patronymic" value="Иванович"/>
+            <column name="birthday" value="1980-04-23"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Лобанова"/>
+            <column name="name" value="Каролина"/>
+            <column name="patronymic" value="Тарасовна"/>
+            <column name="birthday" value="1989-07-17"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Смирнов"/>
+            <column name="name" value="Валентин"/>
+            <column name="patronymic" value="Олегович"/>
+            <column name="birthday" value="1966-03-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Медведева"/>
+            <column name="name" value="Дарья"/>
+            <column name="patronymic" value="Кирилловна"/>
+            <column name="birthday" value="1978-06-19"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Воронина"/>
+            <column name="name" value="Эльмира"/>
+            <column name="patronymic" value="Николаевна"/>
+            <column name="birthday" value="1989-06-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Овчинникова"/>
+            <column name="name" value="Дина"/>
+            <column name="patronymic" value="Борисовна"/>
+            <column name="birthday" value="1979-11-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Крюкова"/>
+            <column name="name" value="Тамара"/>
+            <column name="patronymic" value="Павловна"/>
+            <column name="birthday" value="2004-01-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Воронина"/>
+            <column name="name" value="Ярослава"/>
+            <column name="patronymic" value="Валерьевна"/>
+            <column name="birthday" value="1965-02-28"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Ефремов"/>
+            <column name="name" value="Игнат"/>
+            <column name="patronymic" value="Вольфович"/>
+            <column name="birthday" value="2003-12-12"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Крюкова"/>
+            <column name="name" value="Агния"/>
+            <column name="patronymic" value="Антоновна"/>
+            <column name="birthday" value="1995-06-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Дмитриев"/>
+            <column name="name" value="Савелий"/>
+            <column name="patronymic" value="Данилович"/>
+            <column name="birthday" value="1983-07-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Матвеев"/>
+            <column name="name" value="Семен"/>
+            <column name="patronymic" value="Ефимович"/>
+            <column name="birthday" value="1991-03-06"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Смирнова"/>
+            <column name="name" value="Клавдия"/>
+            <column name="patronymic" value="Валерьевна"/>
+            <column name="birthday" value="1986-02-05"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Герасимова"/>
+            <column name="name" value="Мирослава"/>
+            <column name="patronymic" value="Федоровна"/>
+            <column name="birthday" value="1993-06-05"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Еремин"/>
+            <column name="name" value="Семен"/>
+            <column name="patronymic" value="Витальевич"/>
+            <column name="birthday" value="1996-08-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Мухина"/>
+            <column name="name" value="Елизавета"/>
+            <column name="patronymic" value="Георгиевна"/>
+            <column name="birthday" value="1967-10-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Ковалев"/>
+            <column name="name" value="Алан"/>
+            <column name="patronymic" value="Георгиевич"/>
+            <column name="birthday" value="1992-06-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Князев"/>
+            <column name="name" value="Роберт"/>
+            <column name="patronymic" value="Станиславович"/>
+            <column name="birthday" value="1984-02-10"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Бородин"/>
+            <column name="name" value="Дамир"/>
+            <column name="patronymic" value="Сергеевич"/>
+            <column name="birthday" value="2002-12-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Харитонова"/>
+            <column name="name" value="Анастасия"/>
+            <column name="patronymic" value="Вячеславовна"/>
+            <column name="birthday" value="2005-01-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Борисов"/>
+            <column name="name" value="Арсен"/>
+            <column name="patronymic" value="Максимович"/>
+            <column name="birthday" value="1988-11-15"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Борисова"/>
+            <column name="name" value="Мелания"/>
+            <column name="patronymic" value="Станиславовна"/>
+            <column name="birthday" value="1987-03-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Иванов"/>
+            <column name="name" value="Дмитрий"/>
+            <column name="patronymic" value="Данилович"/>
+            <column name="birthday" value="1976-01-26"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Виноградов"/>
+            <column name="name" value="Петр"/>
+            <column name="patronymic" value="Денисович"/>
+            <column name="birthday" value="1995-10-06"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Алексеева"/>
+            <column name="name" value="Татьяна"/>
+            <column name="patronymic" value="Семеновна"/>
+            <column name="birthday" value="1982-02-20"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Федотов"/>
+            <column name="name" value="Георгий"/>
+            <column name="patronymic" value="Вольфович"/>
+            <column name="birthday" value="2007-12-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Прохоров"/>
+            <column name="name" value="Эрик"/>
+            <column name="patronymic" value="Кириллович"/>
+            <column name="birthday" value="2009-09-05"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Князев"/>
+            <column name="name" value="Роман"/>
+            <column name="patronymic" value="Феликсович"/>
+            <column name="birthday" value="2010-08-17"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Гусева"/>
+            <column name="name" value="Агния"/>
+            <column name="patronymic" value="Васильевна"/>
+            <column name="birthday" value="1971-01-12"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Афанасьева"/>
+            <column name="name" value="Карина"/>
+            <column name="patronymic" value="Иосифовна"/>
+            <column name="birthday" value="1997-11-14"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Молчанов"/>
+            <column name="name" value="Павел"/>
+            <column name="patronymic" value="Семенович"/>
+            <column name="birthday" value="1963-12-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Воронина"/>
+            <column name="name" value="Василина"/>
+            <column name="patronymic" value="Степановна"/>
+            <column name="birthday" value="2001-11-02"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Еремин"/>
+            <column name="name" value="Петр"/>
+            <column name="patronymic" value="Филиппович"/>
+            <column name="birthday" value="2008-03-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Федотов"/>
+            <column name="name" value="Роман"/>
+            <column name="patronymic" value="Юрьевич"/>
+            <column name="birthday" value="1971-07-01"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Миронова"/>
+            <column name="name" value="Юлия"/>
+            <column name="patronymic" value="Александровна"/>
+            <column name="birthday" value="1982-07-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Григорьев"/>
+            <column name="name" value="Герман"/>
+            <column name="patronymic" value="Яковлевич"/>
+            <column name="birthday" value="1975-06-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Зотов"/>
+            <column name="name" value="Анатолий"/>
+            <column name="patronymic" value="Валерьевич"/>
+            <column name="birthday" value="2000-03-01"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Митрофанова"/>
+            <column name="name" value="Есения"/>
+            <column name="patronymic" value="Матвеевна"/>
+            <column name="birthday" value="1984-12-02"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Титов"/>
+            <column name="name" value="Рустам"/>
+            <column name="patronymic" value="Матвеевич"/>
+            <column name="birthday" value="2002-01-19"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Макаров"/>
+            <column name="name" value="Владимир"/>
+            <column name="patronymic" value="Эдуардович"/>
+            <column name="birthday" value="2004-08-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Фомин"/>
+            <column name="name" value="Ян"/>
+            <column name="patronymic" value="Григорьевич"/>
+            <column name="birthday" value="1963-12-15"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Богомолова"/>
+            <column name="name" value="Мирослава"/>
+            <column name="patronymic" value="Кирилловна"/>
+            <column name="birthday" value="1983-12-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Воробьев"/>
+            <column name="name" value="Владимир"/>
+            <column name="patronymic" value="Григорьевич"/>
+            <column name="birthday" value="1973-02-21"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Филатова"/>
+            <column name="name" value="Татьяна"/>
+            <column name="patronymic" value="Тарасовна"/>
+            <column name="birthday" value="2010-10-28"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Филиппов"/>
+            <column name="name" value="Прохор"/>
+            <column name="patronymic" value="Георгиевич"/>
+            <column name="birthday" value="1967-01-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Анисимова"/>
+            <column name="name" value="Ника"/>
+            <column name="patronymic" value="Федоровна"/>
+            <column name="birthday" value="1960-10-20"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Ефимова"/>
+            <column name="name" value="Лия"/>
+            <column name="patronymic" value="Тимофеевна"/>
+            <column name="birthday" value="1972-08-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Балашов"/>
+            <column name="name" value="Семен"/>
+            <column name="patronymic" value="Борисович"/>
+            <column name="birthday" value="2003-10-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Кузина"/>
+            <column name="name" value="Алия"/>
+            <column name="patronymic" value="Андреевна"/>
+            <column name="birthday" value="2002-11-07"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Крылова"/>
+            <column name="name" value="Валерия"/>
+            <column name="patronymic" value="Робертовна"/>
+            <column name="birthday" value="2003-10-01"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Казакова"/>
+            <column name="name" value="Мария"/>
+            <column name="patronymic" value="Семеновна"/>
+            <column name="birthday" value="1976-01-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Коновалова"/>
+            <column name="name" value="Диана"/>
+            <column name="patronymic" value="Ивановна"/>
+            <column name="birthday" value="1978-04-19"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Миронова"/>
+            <column name="name" value="Елена"/>
+            <column name="patronymic" value="Кирилловна"/>
+            <column name="birthday" value="1960-05-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Исаев"/>
+            <column name="name" value="Шамиль"/>
+            <column name="patronymic" value="Борисович"/>
+            <column name="birthday" value="1960-09-26"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Мартынов"/>
+            <column name="name" value="Вадим"/>
+            <column name="patronymic" value="Павлович"/>
+            <column name="birthday" value="1978-08-10"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Прокофьев"/>
+            <column name="name" value="Камиль"/>
+            <column name="patronymic" value="Ярославович"/>
+            <column name="birthday" value="1972-12-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Митрофанова"/>
+            <column name="name" value="Альбина"/>
+            <column name="patronymic" value="Львовна"/>
+            <column name="birthday" value="1969-05-02"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Лукьянов"/>
+            <column name="name" value="Алексей"/>
+            <column name="patronymic" value="Георгиевич"/>
+            <column name="birthday" value="2010-04-06"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Морозов"/>
+            <column name="name" value="Павел"/>
+            <column name="patronymic" value="Матвеевич"/>
+            <column name="birthday" value="1974-09-14"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Пономарев"/>
+            <column name="name" value="Родион"/>
+            <column name="patronymic" value="Ярославович"/>
+            <column name="birthday" value="2009-11-09"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Кудрявцев"/>
+            <column name="name" value="Валентин"/>
+            <column name="patronymic" value="Данилович"/>
+            <column name="birthday" value="1988-09-09"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Лебедева"/>
+            <column name="name" value="Полина"/>
+            <column name="patronymic" value="Семеновна"/>
+            <column name="birthday" value="1963-01-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Крылова"/>
+            <column name="name" value="Антонина"/>
+            <column name="patronymic" value="Львовна"/>
+            <column name="birthday" value="1993-05-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Абрамов"/>
+            <column name="name" value="Семен"/>
+            <column name="patronymic" value="Геннадиевич"/>
+            <column name="birthday" value="1970-05-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Шишкина"/>
+            <column name="name" value="Любовь"/>
+            <column name="patronymic" value="Эдуардовна"/>
+            <column name="birthday" value="1996-12-26"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Семенов"/>
+            <column name="name" value="Эдуард"/>
+            <column name="patronymic" value="Робертович"/>
+            <column name="birthday" value="2003-09-23"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Морозова"/>
+            <column name="name" value="Ангелина"/>
+            <column name="patronymic" value="Олеговна"/>
+            <column name="birthday" value="2009-06-09"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Прохорова"/>
+            <column name="name" value="Вера"/>
+            <column name="patronymic" value="Кирилловна"/>
+            <column name="birthday" value="1965-05-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Молчанова"/>
+            <column name="name" value="Эмилия"/>
+            <column name="patronymic" value="Филипповна"/>
+            <column name="birthday" value="1969-06-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Аксенова"/>
+            <column name="name" value="Элина"/>
+            <column name="patronymic" value="Эдуардовна"/>
+            <column name="birthday" value="1965-12-22"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Кузин"/>
+            <column name="name" value="Альберт"/>
+            <column name="patronymic" value="Федорович"/>
+            <column name="birthday" value="1965-04-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Беляев"/>
+            <column name="name" value="Георгий"/>
+            <column name="patronymic" value="Викторович"/>
+            <column name="birthday" value="1966-03-11"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Некрасова"/>
+            <column name="name" value="Амелия"/>
+            <column name="patronymic" value="Романовна"/>
+            <column name="birthday" value="1978-06-14"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Тихонова"/>
+            <column name="name" value="Валерия"/>
+            <column name="patronymic" value="Григорьевна"/>
+            <column name="birthday" value="1984-09-21"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Кондратьева"/>
+            <column name="name" value="Диана"/>
+            <column name="patronymic" value="Ильинична"/>
+            <column name="birthday" value="1981-10-08"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Голубев"/>
+            <column name="name" value="Тимофей"/>
+            <column name="patronymic" value="Степанович"/>
+            <column name="birthday" value="2004-01-24"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Прокофьева"/>
+            <column name="name" value="Камилла"/>
+            <column name="patronymic" value="Аркадьевна"/>
+            <column name="birthday" value="1990-10-25"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Тимофеев"/>
+            <column name="name" value="Владимир"/>
+            <column name="patronymic" value="Станиславович"/>
+            <column name="birthday" value="2000-05-27"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Леонтьев"/>
+            <column name="name" value="Ян"/>
+            <column name="patronymic" value="Аркадьевич"/>
+            <column name="birthday" value="1963-10-03"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Корнеев"/>
+            <column name="name" value="Валерий"/>
+            <column name="patronymic" value="Евгеньевич"/>
+            <column name="birthday" value="1976-06-09"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Максимова"/>
+            <column name="name" value="Эльмира"/>
+            <column name="patronymic" value="Феликсовна"/>
+            <column name="birthday" value="1974-04-17"/>
+        </insert>
+        <insert tableName="person">
+            <column name="surname" value="Горшкова"/>
+            <column name="name" value="Галина"/>
+            <column name="patronymic" value="Платоновна"/>
+            <column name="birthday" value="2009-10-02"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
