@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск книг</title>
+</head>
+<body>
+
+<div>
+    <a href="/people">Пользователи</a> <a href="/books">Книги</a> <a href="/authors">Авторы</a> <a href="/books/search">Поиск
+    книг</a>
+</div>
+
+<br>
+
+<h1>
+    Поиск книг
+</h1>
+<hr>
+
+<br>
+
+<form th:method="GET" th:action="@{/books/search/r}">
+    <input type="text" name="searchTitle" th:value="${searchTitle}" placeholder="Название искомой книги"/>
+    <button type="submit">Поиск</button>
+</form>
+
+<br/>
+<hr>
+<br/>
+
+<div th:if="${foundBooks != null}">
+    <div th:if="${foundBooks.size() != 0}">
+        <div th:each="book : ${foundBooks}">
+            <a th:href="@{/books/{id}(id=${book.getId()})}"
+               th:text="${book.getTitle() + ', ' + book.getAuthor().getFullName() + ', ' + book.getYear()}">User</a>
+            <br/>
+            <br/>
+            <div th:if="${book.getBorrowing() == null}">
+                Эта книга свободна
+            </div>
+            <div th:if="${book.getBorrowing() != null}">
+                Книга сейчас у <a th:href="@{/people/__${book.getBorrowing().getPerson().getId()}__}"
+                                  th:text="${book.getBorrowing().getPerson().getFullName()}"></a>
+            </div>
+            <br/>
+            <hr>
+        </div>
+    </div>
+
+    <div th:if="${foundBooks.size() == 0}">
+        Книг не найдено!
+    </div>
+</div>
+
+</body>
+</html>

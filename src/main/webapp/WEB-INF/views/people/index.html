@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+
+<div>
+    <a href="/people">Пользователи</a> <a href="/books">Книги</a> <a href="/authors">Авторы</a> <a href="/books/search">Поиск
+    книг</a>
+</div>
+
+<h1>
+    Пользователи
+</h1>
+
+<hr th:if="${people.size() != 0}">
+<br th:if="${people.size() != 0}">
+
+<div th:each="person : ${people}">
+    <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getFullName() + ', ' + person.getBirthday()}">User</a>
+</div>
+
+<br th:if="${people.size() != 0}">
+<hr th:if="${people.size() != 0}">
+
+<form th:method="GET" th:action="@{/people/new}">
+    <input type="submit" value="Добавить нового пользователя"/>
+</form>
+
+</body>
+</html>
